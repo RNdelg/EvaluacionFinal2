@@ -1,0 +1,263 @@
+body {
+  margin: 0 auto;
+  background-color: #02010a;
+  font-family: 'Dancing Script';
+  width: 70%;
+	}
+
+h1 {
+	font-size: 22px;
+}
+
+/*para PC*/
+@media (min-width:900px) {
+header {
+background-color: #5b7989;
+color: white;
+padding: 1.5em;
+border-radius: 10px 10px 0 0;
+animation: intro 1s;
+text-align: center;
+font-family: 'Dancing Script';
+}
+
+header h1{
+text-shadow: 0 0 2px #02010a;
+color: white;
+float: left;
+font-size: 2.0em;
+}
+
+header a{
+color: white;
+float: right;
+}
+
+nav{
+font-size: 25px;
+}
+
+nav li{
+display: inline-block;
+}
+
+.enlace {
+color: white;
+text-decoration: none;
+}
+
+#contenedor img {
+  margin: 0 auto;
+  justify-content: center;
+  padding: 5%;
+  width:90%;
+  }
+
+#contenedor1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  background-color: #d5c75f;
+  box-shadow: 2px 2px #02010a;
+  }
+
+#contenedor2 {
+  	display: flex;
+  	flex-direction: row;
+    justify-content: center;
+    background-color: #d5c75f;
+    box-shadow: 2px 2px #02010a;
+  }
+
+#img2 img {
+-web-kitfilter: grayscale(100%); /*chrome, safari, opera */;
+filter: grayscale(100%);
+}
+
+#img4 img {
+-web-kitfilter: grayscale(100%); /*chrome, safari, opera */;
+filter: grayscale(100%);
+}
+
+#img6 img {
+-web-kitfilter: grayscale(100%); /*chrome, safari, opera */;
+filter: grayscale(100%);
+}
+
+#img1 img {
+-web-kitfilter: blur(10px); /*chrome, safari, opera */;
+filter: blur(10px);
+}
+
+#img3 img {
+  -web-kitfilter: sepia(90%); /*chrome, safari, opera */;
+  filter: sepia(100%);
+}
+
+footer {
+background: #C6d5c5;
+border-radius: 0px 0px 10px 10px;
+}
+
+#piepagina {
+  display: flex;
+	flex-direction: row;
+	width:100%;
+	clear: both;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+
+#piepagina h1 {
+	text-align: center;
+}
+
+#pie1 {
+	text-align: left;
+	width:25%;
+
+}
+
+#pie2 {
+	text-align: justify;
+	width:25%
+}
+
+#pie3 {
+	text-align: center;
+	width:25%;
+}
+
+#pie3 img {
+	border-radius: 5px 5px 5px 5px;
+}
+
+#pie4 {
+	text-align: center;
+	width:20%
+}
+}
+
+
+/*para movil*/
+@media (max-width:900px) {
+header {
+  background-color: #5b7989;
+  color: white;
+  padding: 1.5em;
+  border-radius: 10px 10px 0 0;
+  animation: intro 1s;
+  text-align: center;
+  font-family: 'Dancing Script';
+  }
+
+  header h1{
+  text-shadow: 0 0 2px #02010a;
+  color: white;
+  float: left;
+  font-size: 2.0em;
+  }
+
+  header a{
+  color: white;
+  float: right;
+  }
+
+  nav{
+  font-size: 25px;
+  }
+
+  nav li{
+  display: inline-block;
+  }
+
+  .enlace {
+  color: white;
+  text-decoration: none;
+  }
+
+  #contenedor img {
+      margin: 0 auto;
+      justify-content: center;
+      padding: 5%;
+      width:90%;
+      }
+
+  #contenedor {
+      display:-webkit-flex;
+      display: flex;
+      -webkit-flex-flow:row wrap;
+      flex-flow:row wrap;
+      background-color: #d5c75f;
+      box-shadow: 0px 2px #02010a;
+      justify-content: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  #img2 img {
+  -web-kitfilter: grayscale(100%); /*chrome, safari, opera */;
+  filter: grayscale(100%);
+  }
+
+  #img4 img {
+  -web-kitfilter: grayscale(100%); /*chrome, safari, opera */;
+  filter: grayscale(100%);
+  }
+
+  #img6 img {
+  -web-kitfilter: grayscale(100%); /*chrome, safari, opera */;
+  filter: grayscale(100%);
+  }
+
+  #img1 img {
+  -web-kitfilter: blur(10px); /*chrome, safari, opera */;
+  filter: blur(10px);
+  }
+
+  #img3 img {
+    -web-kitfilter: sepia(90%); /*chrome, safari, opera */;
+    filter: sepia(100%);
+  }
+
+  footer {
+	background: #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	}
+
+	#piepagina {
+		display:-webkit-flex;
+		display: flex;
+		-webkit-flex-flow:row wrap;
+		flex-flow:row wrap;
+		}
+
+	#pie1, #pie2, #pie3, #pie4 {
+			width: 100%;
+			text-align: left;
+      padding-left: 20px;
+		}
+
+  #pie3 p {
+    	text-align: justify;
+    }
+}
+
+header
+{
+order: 0;
+animation: miSlideIn 1s;
+}
+
+@-webkit-keyframes miSlideIn{
+0%{
+margin-top: 150%;
+}
+60%{
+margin-top: -5%;
+}
+100%{
+margin-top: 0%;
+}
+}
